@@ -29,6 +29,7 @@ namespace ShootingDice
             large.Name = "Bigun Rollsalot";
 
             player1.Play(large);
+            Console.WriteLine("-------------------");
 
             CreativeSmackTalkingPlayer player4 = new CreativeSmackTalkingPlayer();
             player4.Name = "Hands McGee";
@@ -37,8 +38,21 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            SoreLoserPlayer player5 = new SoreLoserPlayer();
+            player5.Name = "sir suxalot";
+
+            try
+            {
+                player5.Play(player1);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            Console.WriteLine("-------------------");
+
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large
+                player1, player2, player3, large, player4
             };
 
             PlayMany(players);
