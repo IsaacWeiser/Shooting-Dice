@@ -51,6 +51,12 @@ namespace ShootingDice
             }
             Console.WriteLine("-------------------");
 
+            UpperHalfPlayer player6 = new UpperHalfPlayer();
+            player6.Name = "Chrook Head";
+
+            player6.Play(player5);
+            Console.WriteLine("-------------------");
+
             List<Player> players = new List<Player>() {
                 player1, player2, player3, large, player4
             };
