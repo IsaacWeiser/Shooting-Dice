@@ -57,6 +57,19 @@ namespace ShootingDice
             player6.Play(player5);
             Console.WriteLine("-------------------");
 
+            SoreLoserUpperHalfPlayer player7 = new SoreLoserUpperHalfPlayer();
+            player7.Name = "Cheatii Bighetti";
+
+            try
+            {
+                player7.Play(player6);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            Console.WriteLine("-------------------");
+
             List<Player> players = new List<Player>() {
                 player1, player2, player3, large, player4
             };
